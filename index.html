@@ -19,55 +19,53 @@ $(document).ready(function() {
   });
 })
 
-
 /* == Click to highlight functions == */
 
-      $(document).ready(function(){
+$(document).ready(function(){
 
-        $("label[for='checkall']").hover(
-          function(){ $("label[for='checkall'] span:before").addClass("hover-clear") },
-          function(){ $("label[for='checkall'] span:before").removeClass("hover-clear") }
-        )
-        $(".hi-la").click(
-          function(){ $(".la").toggleClass("highlight", 300) }
-        )
-        $(".hi-game").click(
-          function(){ $(".game").toggleClass("highlight", 300) }
-        )
-        $(".hi-arvr").click(
-          function(){ $(".arvr").toggleClass("highlight", 300) }
-        )
-        $(".hi-mobile").click(
-          function(){ $(".mobile").toggleClass("highlight", 300), $(".mobile-2").toggleClass("lowlight", 300) }
-        )
-        $(".hi-gesture").click(
-          function(){ $(".gesture").toggleClass("highlight", 300) }
-        )
-        $(".hi-maker").click(
-          function(){ $(".maker").toggleClass("highlight", 300) }
-        )
-        $(".hi-iot").click(
-          function(){ $(".iot").toggleClass("highlight", 300) }
-        )
-        $(".hi-adapt").click(
-          function(){ $(".adapt").toggleClass("highlight", 300) }
-        )
-        $(".hi-class").click(
-          function(){ $(".class").toggleClass("highlight", 300) }
-        )
-        $(".hi-cloud").click(
-          function(){ $(".cloud").toggleClass("highlight", 300), $(".cloud-2").toggleClass("lowlight", 300) }
-        )
+  $("label[for='checkall']").hover(
+    function(){ $("label[for='checkall'] span:before").addClass("hover-clear") },
+    function(){ $("label[for='checkall'] span:before").removeClass("hover-clear") }
+  )
+  $(".hi-la").click(
+    function(){ $(".la").toggleClass("highlight", 300) }
+  )
+  $(".hi-game").click(
+    function(){ $(".game").toggleClass("highlight", 300) }
+  )
+  $(".hi-arvr").click(
+    function(){ $(".arvr").toggleClass("highlight", 300) }
+  )
+  $(".hi-mobile").click(
+    function(){ $(".mobile").toggleClass("highlight", 300), $(".mobile-2").toggleClass("lowlight", 300) }
+  )
+  $(".hi-gesture").click(
+    function(){ $(".gesture").toggleClass("highlight", 300) }
+  )
+  $(".hi-maker").click(
+    function(){ $(".maker").toggleClass("highlight", 300) }
+  )
+  $(".hi-iot").click(
+    function(){ $(".iot").toggleClass("highlight", 300) }
+  )
+  $(".hi-adapt").click(
+    function(){ $(".adapt").toggleClass("highlight", 300) }
+  )
+  $(".hi-class").click(
+    function(){ $(".class").toggleClass("highlight", 300) }
+  )
+  $(".hi-cloud").click(
+    function(){ $(".cloud").toggleClass("highlight", 300), $(".cloud-2").toggleClass("lowlight", 300) }
+  )
 
-        $(".hi-social").click(
-          function(){ $(".social").toggleClass("highlight", 300), $(".social-2").toggleClass("lowlight", 300) }
-        )
+  $(".hi-social").click(
+    function(){ $(".social").toggleClass("highlight", 300), $(".social-2").toggleClass("lowlight", 300) }
+  )
 
-        $(".hi-publish").click(
-          function(){ $(".publish").toggleClass("highlight", 300), $(".publish-2").toggleClass("lowlight", 300) }
-        )
-
-      });
+  $(".hi-publish").click(
+    function(){ $(".publish").toggleClass("highlight", 300), $(".publish-2").toggleClass("lowlight", 300) }
+  )
+});
     </script>
     <style media="screen">
 
@@ -120,7 +118,7 @@ $(document).ready(function() {
       }
 
       .years-4-5 {
-        background-color: #dcdcdc;
+        background-color: #ddd;
       }
 
       td[rowspan] {
