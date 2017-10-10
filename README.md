@@ -4,7 +4,7 @@
 
 Interactive view of NMC Reports 2004-2017
 
-Inspired by [Audrey Watters](LINK) who aggregated content from NMC Reports from 2004-2017, but presented them in a non-usable format (an image). The project is designed to show an interactive version of the same table.
+Inspired by [Audrey Watters](http://horizon.hackeducation.com) who aggregated content from NMC Reports from 2004-2017, but presented them in a non-usable format (an image). The project is designed to show an interactive version of the same table.
 
 ## Known Issues
 
