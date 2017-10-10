@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NMC Table</title>
+    <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow:400,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+
+/* == Click to clear selections == */
+
+$(document).ready(function() {
+  $('#checkall').click(function() {
+    var checked = $(this).prop('checked');
+    $('#checkboxes').find('input:checkbox').prop('checked', checked);
+    $("#nmc td").removeClass("highlight", 300);
+    $("#nmc td").removeClass("lowlight", 300);
+  });
+})
+
+
+/* == Click to highlight functions == */
+
+      $(document).ready(function(){
+
+        $("label[for='checkall']").hover(
+          function(){ $("label[for='checkall'] span:before").addClass("hover-clear") },
+          function(){ $("label[for='checkall'] span:before").removeClass("hover-clear") }
+        )
+        $(".hi-la").click(
+          function(){ $(".la").toggleClass("highlight", 300) }
+        )
+        $(".hi-game").click(
+          function(){ $(".game").toggleClass("highlight", 300) }
+        )
+        $(".hi-arvr").click(
+          function(){ $(".arvr").toggleClass("highlight", 300) }
+        )
+        $(".hi-mobile").click(
+          function(){ $(".mobile").toggleClass("highlight", 300), $(".mobile-2").toggleClass("lowlight", 300) }
+        )
+        $(".hi-gesture").click(
+          function(){ $(".gesture").toggleClass("highlight", 300) }
+        )
+        $(".hi-maker").click(
+          function(){ $(".maker").toggleClass("highlight", 300) }
+        )
+        $(".hi-iot").click(
+          function(){ $(".iot").toggleClass("highlight", 300) }
+        )
+        $(".hi-adapt").click(
+          function(){ $(".adapt").toggleClass("highlight", 300) }
+        )
+        $(".hi-class").click(
+          function(){ $(".class").toggleClass("highlight", 300) }
+        )
+        $(".hi-cloud").click(
+          function(){ $(".cloud").toggleClass("highlight", 300), $(".cloud-2").toggleClass("lowlight", 300) }
+        )
+
+        $(".hi-social").click(
+          function(){ $(".social").toggleClass("highlight", 300), $(".social-2").toggleClass("lowlight", 300) }
+        )
+
+        $(".hi-publish").click(
+          function(){ $(".publish").toggleClass("highlight", 300), $(".publish-2").toggleClass("lowlight", 300) }
+        )
+
+      });
+    </script>
+    <style media="screen">
+
+      html, body {
+        font-family: 'Pragati Narrow', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      h1 {
+        font-family: 'Pragati Narrow', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        padding: .25em;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      td, th {
+        word-wrap: break-word;
+        font-family: 'Pragati Narrow', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25em;
+        padding: .25em .5em;
+        width: 5.875%
+      }
+
+      th {
+        font-weight: 700;
+        font-style: normal;
+        color: white;
+        background: #444;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      table, th, td {
+        border: 1px solid #999;
+      }
+
+      .years-1 {
+        background-color: #fafafa;
+      }
+
+      .years-2-3 {
+        background-color: #ededed;
+      }
+
+      .years-4-5 {
+        background-color: #dcdcdc;
+      }
+
+      td[rowspan] {
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .highlight {
+        background-color: #FFCC33;
+      }
+
+      .lowlight {
+        background-color: #FFFF99;
+    }
+
+/*
+//
+// Button STYLES
+//
+*/
+      .block {
+        display: block;
+        clear:both;
+        margin-bottom: .25em;
+      }
+
+      input{
+        display:none;
+      }
+
+      label{
+        text-transform:uppercase;
+        font-family: 'Pragati Narrow', Times, sans-serif;
+        font-weight:bold;
+        font-size:14px;
+        margin-left: 8px;
+        width: 200px;
+        cursor:pointer;
+      }
+      .control {
+        width: 42px;
+        float: left;
+      }
+
+      label span{
+        width:36px;
+        height:22px;
+        box-sizing:border-box;
+        border:1px solid #666;
+        float:left;
+        border-radius:30px;
+        position:relative;
+        cursor:pointer;
+        transition:.3s ease;
+        margin: 2px 0 0 0;
+      }
+
+      input[type=checkbox]:checked + label span{
+        background:#33CC33;
+
+      }
+      input[type=checkbox]:checked + label span:before{
+        left:16px;
+        color: #444;
+        background: #fff;
+      }
+
+      label span:before{
+        transition:.3s ease;
+        content:'';
+        width:16px;
+        height:16px;
+        position:absolute;
+        background:#999;
+        left:2px;
+        top:2px;
+        box-sizing:border-box;
+        border:1px solid;
+        color:#777;
+        border-radius:100px;
+      }
+
+      label[for="checkall"] span:before{
+       content:'';
+       width:16px;
+       height:16px;
+       position:absolute;
+       background:#D98880;
+       left:2px;
+       top:2px;
+       box-sizing:border-box;
+       border:none;
+       border-radius:100px;
+     }
+
+     .hover-clear {
+       background:#0f0;
+     }
+
+     .checkall label span {
+
+       box-sizing:border-box;
+       border:none;
+       border-radius:30px;
+       position:relative;
+       cursor:pointer;
+       transition:.3s ease;
+       margin: 6px 0 0 0;
+    }
+
+    </style>
+  </head>
+  <body>
+
+  </body>
+</html>
+<h1>NMC Horizon Reports 2004 - 2017</h1>
+<table id="nmc">
+  <thead>
+  <tr class="header-row">
+  <th width="4%">Years</th>
+  <th>2004</th>
+  <th>2005</th>
+  <th>2006</th>
+  <th>2007</th>
+  <th>2008</th>
+  <th>2009</th>
+  <th>2010</th>
+  <th>2011</th>
+  <th>2012</th>
+  <th>2013</th>
+  <th>2014</th>
+  <th>2015</th>
+  <th>2016</th>
+  <th>2017</th>
+  </tr>
+</thead>
+<tr class="years-1">
+  <td rowspan="2">&lt; 1 year</td>
+  <td>Learning Objects</td>
+  <td>Ubiquitous Wireless</td>
+  <td class="publish-2">Personal Broadcasting</td>
+  <td class="publish">User-Created Content</td>
+  <td>Grassroots Video</td>
+  <td class="cloud">Cloud Computing</td>
+  <td class="publish">Open Content</td>
+  <td class="publish">Electronic Books</td>
+  <td class="mobile-2">Mobile Apps</td>
+  <td>Massively Open Online Courses</td>
+  <td class="class">Flipped Classroom</td>
+  <td class="mobile-2">Bring Your Own Device</td>
+  <td class="mobile-2">Bring Your Own Device</td>
+  <td class="adapt">Adaptive Learning</td>
+
+</tr>
+
+<tr class="years-1">
+  <td>Scalable Vector Graphics</td>
+  <td>Extended Learning</td>
+  <td class="social">Social Computing</td>
+  <td class="social">Social Networking</td>
+  <td class="social-2">Collaboration Webs</td>
+  <td class="mobile">Mobiles</td>
+  <td class="mobile">Mobile Computing</td>
+  <td class="mobile">Mobiles</td>
+  <td class="mobile-2">Tablet Computing</td>
+  <td class="mobile-2">Tablet Computing</td>
+  <td class="la">Learning Analytics</td>
+  <td class="class">Flipped Classroom</td>
+  <td class="la adapt">Learning Analytics and Adaptive Learning</td>
+  <td class="mobile">Mobile Learning</td>
+
+
+</tr>
+
+
+<tr class="years-2-3">
+  <td rowspan="2">2 to 3 years</td>
+  <td class="maker-2">Rapid Prototyping</td>
+  <td>Intelligent Searching</td>
+  <td class="mobile-2">The Phones in Their Pockets</td>
+  <td class="mobile">Mobile Phones</td>
+  <td class="mobile-2">Mobile Broadband</td>
+  <td>The Personal Web</td>
+  <td class="publish">Electronic Books</td>
+  <td class="game">Game-Based Learning</td>
+  <td class="game">Game-Based Learning</td>
+  <td class="game">Games and Gamification</td>
+  <td class="maker">3D Printing</td>
+  <td class="maker">Makerspaces</td>
+  <td class="arvr">Augmented and Virtual Reality</td>
+  <td class="iot">The Internet of Things</td>
+
+</tr>
+
+<tr class="years-2-3">
+  <td>Multimodal Interfaces</td>
+  <td class="game">Educational Gaming</td>
+  <td class="game">Educational Gaming</td>
+  <td class="arvr">Virtual Worlds</td>
+  <td>Data Mashups</td>
+  <td>Geo-Everything</td>
+  <td class="arvr">Simple Augmented Reality</td>
+  <td class="arvr">Augmented Reality</td>
+  <td class="la">Learning Analytics</td>
+  <td class="la">Learning Analytics</td>
+  <td class="game">Games and Gamification</td>
+  <td class="mobile-2">Wearable Technology</td>
+  <td class="maker">Makerspaces</td>
+  <td>Next-Generation LMS</td>
+
+
+</tr>
+
+<tr class="years-4-5">
+  <td rowspan="2">4 to 5 years</td>
+  <td class="social-2">Knowledge Webs</td>
+  <td class="social">Social Networks and Knowledge Webs</td>
+  <td class="arvr">Augmented Reality and Enhanced Visualization</td>
+  <td class="game">Massively Multiplayer Educational Games</td>
+  <td class="social">Social Operating Systems</td>
+  <td>Semantic-Aware Applications</td>
+  <td class="gesture">Gesture-Based Computing</td>
+  <td class="gesture">Gesture-Based Computing</td>
+  <td class="gesture">Gesture-Based Computing</td>
+  <td class="maker">3D Printing</td>
+  <td>Quantified Self</td>
+  <td class="adapt">Adaptive Learning Technologies</td>
+  <td>Affective Computing</td>
+  <td>Artificial Intelligence</td>
+
+
+</tr>
+
+<tr class="years-4-5">
+  <td>Context-Aware Computing</td>
+  <td class="arvr">Context-Aware Computing and Augmented Reality</td>
+  <td class="mobile-2">Context-Aware Environments and Devices</td>
+  <td class="publish">The New Scholarship &amp; Emerging Forms of Publication</td>
+  <td>Collective Intelligence</td>
+  <td>Smart Objects</td>
+  <td>Visual Data Analysis</td>
+  <td class="la">Learning Analytics</td>
+  <td class="iot">Internet of Things</td>
+  <td class="mobile-2">Wearable Technology</td>
+  <td>Virtual Assistants</td>
+  <td class="iot">The Internet of Things</td>
+  <td>Robotics</td>
+  <td>Natural User Interfaces</td>
+
+
+</tr>
+
+</table>
+
+<div id="checkboxes">
+
+<div class="block checkall">
+  <input id="checkall" type="button" class="checkall" />
+  <label for="checkall"><span></span>Clear All</label>&nbsp;
+</div>
+
+<div class="block">
+  <input id="la" type="checkbox" class="hi-la" />
+  <label for="la"><span></span>Learning Analytics</label>
+</div>
+
+<div class="block">
+  <input id="game" type="checkbox" class="hi-game" />
+  <label for="game"><span></span>Game-related</label>
+</div>
+
+<div class="block">
+  <input id="arvr" type="checkbox" class="hi-arvr" />
+  <label for="arvr"><span></span>Virtual/Augmented Reality</label>
+</div>
+
+<div class="block">
+  <input id="mobile" type="checkbox" class="hi-mobile" />
+  <label for="mobile"><span></span>Mobile</label>
+</div>
+
+<div class="block">
+  <input id="gesture" type="checkbox" class="hi-gesture" />
+  <label for="gesture"><span></span>Gestures</label>
+</div>
+
+
+<div class="block">
+  <input id="iot" type="checkbox" class="hi-iot" />
+  <label for="iot"><span></span>Internet of things</label>
+</div>
+
+<div class="block">
+  <input id="maker" type="checkbox" class="hi-maker" />
+  <label for="maker"><span></span>Maker</label>
+</div>
+
+
+<div class="block">
+  <input id="adapt" type="checkbox" class="hi-adapt" />
+  <label for="adapt"><span></span>Adaptive</label>
+</div>
+
+
+
+</div>
+
+</body>
+</html>
