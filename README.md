@@ -1,3 +1,5 @@
+[![GitHub release](https://img.shields.io/github/release/alistaircom/nmc-reports.svg)]()
+
 # Interactive NMC Reports
 
 Interactive view of NMC Reports 2004-2017
