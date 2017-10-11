@@ -14,8 +14,8 @@ $(document).ready(function() {
   $('#checkall').click(function() {
     var checked = $(this).prop('checked');
     $('#checkboxes').find('input:checkbox').prop('checked', checked);
-    $("#nmc td").removeClass("highlight", 300);
-    $("#nmc td").removeClass("lowlight", 300);
+    $("#nmc td").removeClass("lowlight");
+    $("#nmc td").removeClass("highlight", 500);
   });
 })
 
@@ -24,8 +24,8 @@ $(document).ready(function() {
 $(document).ready(function(){
 
   $("label[for='checkall']").hover(
-    function(){ $("label[for='checkall'] span:before").addClass("hover-clear") },
-    function(){ $("label[for='checkall'] span:before").removeClass("hover-clear") }
+    function(){ $("label[for='checkall'] span:before").addClass("hover-clear", 400) },
+    function(){ $("label[for='checkall'] span:before").removeClass("hover-clear", 400) }
   )
   $(".hi-la").click(
     function(){ $(".la").toggleClass("highlight", 300) }
@@ -41,7 +41,7 @@ $(document).ready(function(){
   )
   $(".hi-gesture").click(
     function(){ $(".gesture").toggleClass("highlight", 300) }
-  )
+
   $(".hi-maker").click(
     function(){ $(".maker").toggleClass("highlight", 300) }
   )
