@@ -1,4 +1,4 @@
-[![GitHub release](https://img.shields.io/github/release/alistaircom/nmc-reports.svg)]()
+Version 0.1
 
 # Interactive NMC Reports
 
