@@ -1,0 +1,25 @@
+{
+  "name": "nmc",
+  "version": "1.0.0",
+  "description": "New Media Table",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alistaircom/nmc-reports.git"
+  },
+  "keywords": [
+    "nmc"
+  ],
+  "author": "Alistair Calder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alistaircom/nmc-reports/issues"
+  },
+  "homepage": "https://github.com/alistaircom/nmc-reports#readme",
+  "dependencies": {
+    "@frctl/fractal": "^1.1.7"
+  }
+}
